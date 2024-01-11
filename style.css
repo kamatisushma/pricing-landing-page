@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+.pricing {
+    width: 100%;
+    min-height: 100vh;
+    background: #5c539d;
+    
+}
+.pricing h2{
+    color:aliceblue
+    font-size:32pz;
+    padding:50px 0;
+    text-align: center;
+}
+
+.plans{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:25px;
+}
+.plans-basic{
+    background: #1f1f1f;
+    padding: 10% 15%;
+    border-radius: 10px;
+    color:#fff;
+    text-align: center;
+}
+.plans-basic p{
+    font-size: 22px;
+}
+
+.plans-basic h3{
+    font-size: 30px;
+    margin: 20px 0 40px;
+    font-weight: 500;
+}
+.price-basic h3 span{
+    font-size: 16px;
+}
+.plans-basic ul{
+    text-align: left;
+    margin: 20px 0;
+    color: #ddd;
+    list-style: none;
+
+}
+.plans-basic ul li{
+    margin: 15px 0;
+}
+.plans-basic ul li::before{
+    content:'\2022';
+    color: #e33058;
+    font-weight: bold;
+    margin-right: 8px;
+}
+.plans-basic button{
+    width: 100%;
+    padding: 14px 0;
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+    border:1px solid #e33058;
+    margin-top: 30px;
+    cursor:pointer;
+    transition: background 0.5s;
+}
+.plans-basic button:hover{
+    background: #e33058;
+}
